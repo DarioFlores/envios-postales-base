@@ -5,7 +5,7 @@ package ar.com.grupoesfera.capacitacion.enviospostales;
 
 public class Aplicacion {
     public String getGreeting() {
-        return "Hola Curso de Integración Continua!.";
+        return "Hola Curso de Integración Continuas!.";
     }
 
     public static void main(String[] args) {
