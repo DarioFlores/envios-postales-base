@@ -6,6 +6,10 @@ import java.util.List;
 public class Envio {
 
     private List<Paquete> paquetes;
+    private Double costo;
+    private String direccionEntrega;
+    private Transporte transporte;
+
 
     public Envio(List<Paquete> paquetes) {
         this.paquetes = paquetes;
@@ -21,5 +25,13 @@ public class Envio {
 
     public Integer getCantidadDePaquetes() {
         return paquetes.size();
+    }
+
+    public Double pesoTodal(){
+        Double pesoTodal = 0.0;
+        for(Paquete paquete : this.paquetes){
+            pesoTodal = pesoTodal + paquete.getPeso();
+        }
+        return pesoTodal;
     }
 }
